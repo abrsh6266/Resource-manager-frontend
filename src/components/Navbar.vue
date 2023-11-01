@@ -9,6 +9,7 @@
             <li><a href="/home">Home</a></li>
             <li><router-link to="/inventory"><em>Inventories</em></router-link></li>
             <li><router-link to="/service"><em>Services</em></router-link></li>
+            <li><router-link to="/report"><em>Report</em></router-link></li>
             <li v-if="isAdmin"><router-link to="/signup"><em>Sign Up User</em></router-link></li>
             <li><a @click="clearData"><i class="fas fa-sign-out-alt"></i></a></li>
          </ul>

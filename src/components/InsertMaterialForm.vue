@@ -19,6 +19,12 @@
   
         <label for="diskType">Disk Type:</label>
         <input type="text" id="diskType" v-model="formData.diskType">
+
+        <label for="ram">Ram:</label>
+        <input type="text" id="ram" v-model="formData.ram">
+
+        <label for="storage">Storage Size:</label>
+        <input type="text" id="storage" v-model="formData.storage">
   
         <label for="networkType">Network Type:</label>
         <input type="text" id="networkType" v-model="formData.networkType">
@@ -47,6 +53,8 @@
           type: '',
           processor: '',
           diskType: '',
+          ram:'',
+          storage:'',
           networkType: '',
           scanType: '',
           owner: '',

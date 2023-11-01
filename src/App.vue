@@ -16,7 +16,7 @@ export default {
 <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 body{
-   background: url(./img/background.jpg) no-repeat center center fixed; 
+  background: url(./img/background.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

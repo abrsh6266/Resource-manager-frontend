@@ -19,6 +19,7 @@ import DeletingCustodianView from './views/Custodian/DeletingCustodianView.vue'
 import AddingRelationView from './views/Relation/AddingRelationView.vue'
 import UpdatingRelationView from './views/Relation/UpdatingRelationView.vue'
 import DeletingRelationView from './views/Relation/DeletingRelationView.vue'
+import ReportView from './views/ReportView.vue'
 const routes = [
   {
     path: '/login',
@@ -109,6 +110,11 @@ const routes = [
     path: '/signup',
     name: 'signup',
     component: SignupView,
+  },
+  {
+    path: '/report',
+    name: 'report',
+    component: ReportView,
   },
   {
     path: '/home',

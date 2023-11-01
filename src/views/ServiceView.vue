@@ -73,6 +73,8 @@
         serialNumber
         type
         diskType
+        ram
+        storage
         model
     },
     Department {

@@ -32,6 +32,8 @@
               <th>Type</th>
               <th>Processor</th>
               <th>Disk type</th>
+              <th>Ram</th>
+              <th>Storage</th>
               <th>Network Type</th>
               <th>Scan type</th>
               <th>Owner</th>
@@ -52,6 +54,8 @@
               <td>{{ inventory.type }}</td>
               <td>{{ inventory.processor }}</td>
               <td>{{ inventory.diskType }}</td>
+              <td>{{ inventory.ram }}</td>
+              <td>{{ inventory.storage }}</td>
               <td>{{ inventory.networkType }}</td>
               <td>{{ inventory.scanType }}</td>
               <td>{{ inventory.owner }}</td>
@@ -101,6 +105,8 @@
         owner
         processor
         scanType
+        ram
+        storage
         serialNumber
         taken
         total

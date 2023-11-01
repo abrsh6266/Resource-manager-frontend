@@ -13,11 +13,13 @@ export default{
   },
   setup() {
         const { mutate: insertMaterial, loading, error } = useMutation(gql`
-        mutation InsertMaterialOne($name: String!,$serialNumber: String!,$type: String!,$processor: String!,$diskType: String!,$model: String!,$networkType: String!,$scanType: String!,$owner: String!,$total: Int!) {
-          insert_Material_one(object: {name: $name, serialNumber: $serialNumber, type: $type, processor: $processor, diskType: $diskType, model: $model, networkType: $networkType, scanType: $scanType, owner: $owner, total: $total}) {
+        mutation InsertMaterialOne($name: String!,$storage: String!,$ram: String!,$serialNumber: String!,$type: String!,$processor: String!,$diskType: String!,$model: String!,$networkType: String!,$scanType: String!,$owner: String!,$total: Int!) {
+          insert_Material_one(object: {name: $name, ram:$ram, storage:$storage, serialNumber: $serialNumber, type: $type, processor: $processor, diskType: $diskType, model: $model, networkType: $networkType, scanType: $scanType, owner: $owner, total: $total}) {
             name
             serialNumber
             type
+            storage
+            ram
             processor
             diskType
             model
@@ -46,12 +48,14 @@ export default{
     async insertingMaterial(material) {
       try {
         console.log(material)
-        const { name,serialNumber,model,type,processor,diskType,networkType,scanType,owner,total } = material;
+        const { name,serialNumber,model,type,processor,diskType,networkType,scanType,owner,total,storage,ram } = material;
         const { data } = await this.insertMaterial({
           name,
           serialNumber,
           model,
           type,
+          ram,
+          storage,
           processor,
           diskType,
           networkType,

@@ -158,7 +158,15 @@ const api18Client = new ApolloClient({
   }),
   cache: new InMemoryCache(),
 });
+// API 19
+const api19Client = new ApolloClient({
+  link: createHttpLink({
+    uri: 'http://localhost:8082/api/report',
+    ...httpOptions,
+  }),
+  cache: new InMemoryCache(),
+});
 export { api1Client, api2Client,api3Client,api4Client,
   api5Client,api6Client,api7Client,api8Client,
   api9Client,api10Client,api11Client,api12Client,api13Client,
-  api14Client,api15Client,api16Client,api17Client,api18Client};
+  api14Client,api15Client,api16Client,api17Client,api18Client,api19Client};

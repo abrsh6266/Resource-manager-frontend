@@ -35,7 +35,6 @@ export default{
   methods:{
     async insertingCategory(category) {
       try {
-        console.log(category)
         const { name } = category;
         const { data } = await this.insertCategory({
           name
