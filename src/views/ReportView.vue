@@ -41,7 +41,7 @@
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 import Navbar from "../components/Navbar.vue";
-import ProductFormVue from "../components/ProductForm.vue";
+import ProductFormVue from "../components/CategoryShow.vue";
 import * as XLSX from "xlsx";
 const get_material = gql`
   query GetMaterial {

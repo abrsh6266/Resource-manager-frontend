@@ -20,6 +20,7 @@ import AddingRelationView from './views/Relation/AddingRelationView.vue'
 import UpdatingRelationView from './views/Relation/UpdatingRelationView.vue'
 import DeletingRelationView from './views/Relation/DeletingRelationView.vue'
 import ReportView from './views/ReportView.vue'
+import ManagersView from './views/ManagersView.vue';
 const routes = [
   {
     path: '/login',
@@ -125,6 +126,11 @@ const routes = [
     path: '/',
     name: 'header',
     component: HeaderView,
+  },
+  {
+    path: '/managers',
+    name: 'managers',
+    component: ManagersView,
   },
 ]
 const router = createRouter({

@@ -5,7 +5,8 @@ import { provideApolloClient } from '@vue/apollo-composable';
 import { api1Client,api2Client,api3Client,api4Client,api5Client,
   api6Client,api7Client,api8Client,api9Client,api10Client,
   api11Client,api12Client,api13Client,api14Client,
-  api15Client,api16Client,api17Client,api18Client, api19Client} from './apis/graphqlClients';
+  api15Client,api16Client,api17Client,api18Client, 
+  api19Client, api20Client} from './apis/graphqlClients';
 const app = createApp(App);
 router.beforeEach((to, from, next) => {
   const currentPath = to.path;
@@ -51,6 +52,9 @@ router.beforeEach((to, from, next) => {
   }
   else if(currentPath==='/report'){
     app.provide(provideApolloClient(api19Client));
+  }
+  else if(currentPath==='/managers'){
+    app.provide(provideApolloClient(api20Client));
   }
   next();
 });
