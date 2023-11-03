@@ -56,10 +56,10 @@ export default{
 .department {
   border-radius: 10px 20px 30px 40px;
   width: calc(80%);
-  background-image: url(./img/department.jpeg);
+  background-color:rgb(184, 209, 201);
   margin: 10px;
   padding: 10px 20px;
-  border-left: 5px solid rgb(80, 163, 80);
+  border-left: 5px solid rgb(255, 0, 0);
   transition: 0.2s;
 }
 .custodian-heading{

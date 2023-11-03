@@ -109,7 +109,7 @@ button {
 .materialCustodian {
   border-radius: 10px 20px 30px 40px;
   width: calc(80%);
-  background-image: url(./img/department.jpeg);
+  background-color: rgb(20, 245, 88);
   margin: 10px;
   padding: 10px 20px;
   border-left: 5px solid rgb(80, 163, 80);

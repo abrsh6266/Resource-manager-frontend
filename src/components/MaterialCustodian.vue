@@ -55,10 +55,10 @@ export default{
 .materialCustodian {
   border-radius: 10px 20px 30px 40px;
   width: calc(80%);
-  background-image: url(./img/department.jpeg);
+  background-color:rgb(232, 231, 140) ;
   margin: 10px;
   padding: 10px 20px;
-  border-left: 5px solid rgb(80, 163, 80);
+  border-left: 5px solid rgb(224, 239, 11);
   transition: 0.2s;
 }
 .custodian-heading{

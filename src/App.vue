@@ -1,29 +1,26 @@
 <template>
   <body>
     <router-view></router-view>
+    <Footer />
   </body>
-  <Footer />
 </template>
 <script>
-import Footer from './components/Footer.vue'
+import Footer from "./components/Footer.vue";
 export default {
-  name:'App',
-  components:{
+  name: "App",
+  components: {
     Footer,
   },
-  }
+};
 </script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-body{
-  background: url(./img/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 * {
   font-family: Open Sans;
+}
+body{
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 }
 .container {
   max-width: 500px;

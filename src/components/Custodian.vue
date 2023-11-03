@@ -55,10 +55,10 @@ export default{
 .custodian {
   border-radius: 10px 20px 30px 40px;
   width: calc(80%);
-  background-image: url(./img/Custtodian.avif);
+  background-color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px 20px;
-  border-left: 5px solid rgb(80, 163, 80);
+  border-left: 5px solid rgb(0, 255, 0);
   transition: 0.2s;
 }
 .custodian:hover{
